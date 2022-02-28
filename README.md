@@ -6,13 +6,15 @@
 
 ## Configuring a logger object for a MODULE
 
-`import EZLogger`
+* The EZLogger object takes 2 arguments. Your module name as a **string** and the **list** of granular loggers you would like to create
+```
+import EZLogger
 
 EZ = EZLogger('module_name',['function_1','function_2','function_n'])
 F1Logger = logging.getLogger('function_1')
 F2Logger = logging.getLogger('function_2')
 FNLogger = logging.getLogger('function_n')
-`
+```
 
 # How to use your new function loggers
 
