@@ -6,7 +6,7 @@
 
 ## Configuring a logger object for a MODULE
 
-`import EZLogger
+`import EZLogger`
 
 # Instantiate loggers
 EZ = EZLogger('module_name',['function_1','function_2','function_n'])
