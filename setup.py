@@ -4,7 +4,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="EZ_Logger",
+    name="DeepLogger",
     version="0.0.1",
     author="Aaron Stopher",
     description="Easily configure, simple granular loggers for all your modules.",
@@ -14,7 +14,7 @@ setuptools.setup(
     project_urls={
         "Bug Tracker": "https://github.com/aastopher/EZLogger/issues",
     },
-    keywords=['python', 'logger', 'CLI','easy logging','easy logger'],
+    keywords=['python', 'logger', 'CLI','deep logging','deep logger','deep'],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",

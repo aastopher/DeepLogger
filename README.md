@@ -1,27 +1,27 @@
-# EZLogger Usage
+# Deep Logger Usage
 
 ## Installing the package
 
-`pip3 install ez_logger`
+`pip3 install deeplogger`
 
 ## Configuring a logger object for a MODULE
 
-* The EZLogger object takes 2 arguments. Your module name as a **string** and the **list** of granular loggers you would like to create
+* The Deep Logger object takes 2 arguments. Your module name as a **string** and the **list** of granular loggers you would like to create
 ```
-import EZLogger
+import DeepLogger
 
-EZ = EZLogger('module_name',['function_1','function_2','function_n'])
-F1Logger = EZ.getLogger('function_1')
-F2Logger = EZ.getLogger('function_2')
-FNLogger = EZ.getLogger('function_n')
+DL = DeepLogger('module_name',['function_1','function_2','function_n'])
+F1Logger = DL.getLogger('function_1')
+F2Logger = DL.getLogger('function_2')
+FNLogger = DL.getLogger('function_n')
 ```
 
 # How to use your new function loggers
 
 * To create a new info level log line in one of your function loggers use the following pattern. (see below for additional log level options)
 * `F1Logger.info('log message')`
-* Each EZLogger object contains it's own StreamHandler which will allow you to print to console based on the above configuration as follows
-* `EZ.console_logger('log message')`
+* Each Deep Logger object contains it's own StreamHandler which will allow you to print to console based on the above configuration as follows
+* `DL.console_logger('log message')`
 
 # Log levels
 

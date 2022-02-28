@@ -4,7 +4,7 @@ import logging,os,argparse,datetime
 now = datetime.datetime.now()
 now = now.strftime("%Y-%m-%d_%H-%M-%S")
 
-class EZLogger:
+class DeepLogger:
     def __init__(self,log_name,loggers):
         self.args,self.parser = self._cli_config()
         if not self.args.command:
