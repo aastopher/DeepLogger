@@ -1,5 +1,8 @@
 # Deep Logger Usage
 
+.. image:: https://badge.fury.io/py/DeepLogger.svg
+    :target: https://badge.fury.io/py/DeepLogger
+
 ## Configuring a logger object for a MODULE
 
 * The Deep Logger object takes 2 arguments. Your module name as a **string** and the **list** of granular loggers you would like to create
