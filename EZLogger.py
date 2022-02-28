@@ -1,19 +1,26 @@
-### MODULE: responsible for creating dynamic loggers and configuring a cli ###
-import logging, os ,argparse, datetime
+### MODULE: Clasee responsible for creating dynamic loggers and configuring a CLI for verbose logging option
+import logging,os,argparse,datetime
 
 now = datetime.datetime.now()
 now = now.strftime("%Y-%m-%d_%H-%M-%S")
 
-class CLILogger:
+class EZLogger:
     def __init__(self,log_name,loggers):
         self.args,self.parser = self._cli_config()
         if not self.args.command:
-            self.log_lvl = logging.INFO
+            self.loggers = loggers
+            self.log_name = log_name
+            root = logging.getLogger()
+            root.setLevel(logging.DEBUG)
+            self.console_logger = logging.getLogger(f'console_{self.log_name}')
+            sh = logging.StreamHandler()
+            sh.setLevel(logging.INFO)
+            self.console_logger.addHandler(sh)
         else:
             self.log_lvl = self.args.log_level
-        self.loggers = loggers
-        self.log_name = log_name
-        self._logging_config()
+            self.loggers = loggers
+            self.log_name = log_name
+            self._logging_config()
     def _logging_config(self):
         root = logging.getLogger()
         root.setLevel(logging.DEBUG)
@@ -28,19 +35,19 @@ class CLILogger:
         for log in self.loggers:
             logger = logging.getLogger(f'{log}')
             logger.addHandler(fh)
-        infoLogger = logging.getLogger('console')
+        self.console_logger = logging.getLogger(f'console_{self.log_name}')
         sh = logging.StreamHandler()
         sh.setLevel(logging.INFO)
-        infoLogger.addHandler(sh)
+        self.console_logger.addHandler(sh)
     def _cli_config(self):
         def _add_options(parser):
-            parser.add_argument('-v', '--verbose', help='add logging verbosity', action='store_const', dest='log_level', const=logging.DEBUG, default=logging.INFO)
+            parser.add_argument('-v', '--verbose', help='adds verbose logging to output logs', action='store_const', dest='log_level', const=logging.DEBUG, default=logging.INFO)
 
-        parser = argparse.ArgumentParser(description= f'micro automation service for Solicitor Credit Weekly Update Process')
+        parser = argparse.ArgumentParser(description= f'EZ Logger and CLI')
         subparser = parser.add_subparsers(dest='command', metavar= '<command>', help='valid choices: {log} options: {-v}')
 
-        explore_command = subparser.add_parser('log')
-        explore_command.add_argument('log', help='log verbose', action= 'store_true')
-        _add_options(explore_command)
+        self.log_command = subparser.add_parser('log')
+        self.log_command.add_argument('log', help='output logs', action= 'store_true')
+        _add_options(self.log_command)
 
         return parser.parse_args(), parser
