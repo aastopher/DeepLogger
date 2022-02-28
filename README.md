@@ -8,7 +8,6 @@
 
 `import EZLogger`
 
-# Instantiate loggers
 EZ = EZLogger('module_name',['function_1','function_2','function_n'])
 F1Logger = logging.getLogger('function_1')
 F2Logger = logging.getLogger('function_2')
