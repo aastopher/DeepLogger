@@ -2,7 +2,7 @@
 
 ## Installing the package
 
-`pip3 install EZLogger`
+`pip3 install ez_logger`
 
 ## Configuring a logger object for a MODULE
 
