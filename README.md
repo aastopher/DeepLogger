@@ -1,7 +1,6 @@
 # Deep Logger Usage
 
-.. image:: https://badge.fury.io/py/DeepLogger.svg
-    :target: https://badge.fury.io/py/DeepLogger
+[![PyPI version](https://badge.fury.io/py/DeepLogger.svg)](https://badge.fury.io/py/DeepLogger)
 
 ## Configuring a logger object for a MODULE
 
