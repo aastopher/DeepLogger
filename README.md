@@ -11,9 +11,9 @@
 import EZLogger
 
 EZ = EZLogger('module_name',['function_1','function_2','function_n'])
-F1Logger = logging.getLogger('function_1')
-F2Logger = logging.getLogger('function_2')
-FNLogger = logging.getLogger('function_n')
+F1Logger = EZ.getLogger('function_1')
+F2Logger = EZ.getLogger('function_2')
+FNLogger = EZ.getLogger('function_n')
 ```
 
 # How to use your new function loggers
