@@ -21,6 +21,8 @@ class EZLogger:
             self.loggers = loggers
             self.log_name = log_name
             self._logging_config()
+    def getLogger(self,logger_name):
+        return logging.getLogger(logger_name)
     def _logging_config(self):
         root = logging.getLogger()
         root.setLevel(logging.DEBUG)
