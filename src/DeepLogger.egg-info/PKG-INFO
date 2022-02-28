@@ -1,3 +1,20 @@
+Metadata-Version: 2.1
+Name: DeepLogger
+Version: 0.0.1
+Summary: Easily configure, simple granular loggers for all your modules.
+Home-page: https://github.com/aastopher/EZLogger
+Author: Aaron Stopher
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/aastopher/EZLogger/issues
+Keywords: python,logger,CLI,deep logging,deep logger,deep
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
 # Deep Logger Usage
 
 ## Configuring a logger object for a MODULE
@@ -27,3 +44,5 @@ FNLogger = DL.getLogger('function_n')
 * WARNING = 30: This level indicates that something unexpected has happened or some problem is about to happen in the near future.
 * ERROR = 40: As it implies, an error has occurred. The software was unable to perform some function.
 * CRITICAL = 50: A serious error has occurred. The program itself may shut down or not be able to continue running properly.
+
+
