@@ -1,4 +1,4 @@
-# EZLogger
+# EZLogger Usage
 
 ## Installing the package
 
