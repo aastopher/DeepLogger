@@ -6,7 +6,7 @@
 
 * The Deep Logger object takes 2 arguments. Your module name as a **string** and the **list** of granular loggers you would like to create
 ```
-import DeepLogger
+from DeepLogger import DeepLogger
 
 DL = DeepLogger('module_name',['function_1','function_2','function_n'])
 F1Logger = DL.getLogger('function_1')
