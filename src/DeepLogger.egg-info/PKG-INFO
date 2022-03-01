@@ -1,11 +1,11 @@
 Metadata-Version: 2.1
 Name: DeepLogger
-Version: 0.0.2
+Version: 0.0.3
 Summary: Easily configure, simple granular loggers for all your modules.
-Home-page: https://github.com/aastopher/EZLogger
+Home-page: https://github.com/aastopher/DeepLogger
 Author: Aaron Stopher
 License: UNKNOWN
-Project-URL: Bug Tracker, https://github.com/aastopher/EZLogger/issues
+Project-URL: Bug Tracker, https://github.com/aastopher/DeepLogger/issues
 Keywords: python,logger,CLI,deep logging,deep logger,deep
 Platform: UNKNOWN
 Classifier: Programming Language :: Python :: 3
