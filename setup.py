@@ -10,9 +10,9 @@ setuptools.setup(
     description="Easily configure, simple granular loggers for all your modules.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/aastopher/EZLogger",
+    url="https://github.com/aastopher/DeepLogger",
     project_urls={
-        "Bug Tracker": "https://github.com/aastopher/EZLogger/issues",
+        "Bug Tracker": "https://github.com/aastopher/DeepLogger/issues",
     },
     keywords=['python', 'logger', 'CLI','deep logging','deep logger','deep'],
     classifiers=[
