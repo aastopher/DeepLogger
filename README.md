@@ -1,8 +1,9 @@
-# Official Deep Logger Repository
+# Overview
+A lightweight logging library designed for easy granular logging for all your modules.
 
 [![PyPI version](https://badge.fury.io/py/DeepLogger.svg)](https://badge.fury.io/py/DeepLogger)
 
-## Configuring a logger object for a MODULE
+## Basic Usage
 
 * The Deep Logger object takes 2 arguments. Your module name as a **string** and the **list** of granular loggers you would like to create
 ```
@@ -14,7 +15,7 @@ F2Logger = DL.getLogger('function_2')
 FNLogger = DL.getLogger('function_n')
 ```
 
-# How to use your new function loggers
+# How to use your new loggers
 
 * To create a new info level log line in one of your function loggers use the following pattern. (see below for additional log level options)
 * `F1Logger.info('log message')`
