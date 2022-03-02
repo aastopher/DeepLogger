@@ -1,4 +1,4 @@
-# Deep Logger Usage
+# Official Deep Logger Repository
 
 [![PyPI version](https://badge.fury.io/py/DeepLogger.svg)](https://badge.fury.io/py/DeepLogger)
 
