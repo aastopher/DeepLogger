@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="DeepLogger",
-    version="0.0.3",
+    version="0.0.5",
     author="Aaron Stopher",
     description="Easily configure, simple granular loggers for all your modules.",
     long_description=long_description,
