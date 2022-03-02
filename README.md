@@ -15,14 +15,14 @@ F2Logger = DL.getLogger('function_2')
 FNLogger = DL.getLogger('function_n')
 ```
 
-# How to use your new loggers
+## How to use your new loggers
 
 * To create a new info level log line in one of your function loggers use the following pattern. (see below for additional log level options)
 * `F1Logger.info('log message')`
 * Each Deep Logger object contains it's own StreamHandler which will allow you to print to console based on the above configuration as follows
 * `DL.console_logger('log message')`
 
-# Log levels
+## Log levels
 
 * NOTSET = 0: This is the initial default setting of a log when it is created. It is not really relevant and most developers will not even take notice of this category. In many circles, it has already become nonessential. The root log is usually created with level WARNING.
 * DEBUG = 10: This level gives detailed information, useful only when a problem is being diagnosed.
