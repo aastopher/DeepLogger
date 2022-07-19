@@ -30,3 +30,7 @@ FNLogger = DL.getLogger('function_n')
 * WARNING = 30: This level indicates that something unexpected has happened or some problem is about to happen in the near future.
 * ERROR = 40: As it implies, an error has occurred. The software was unable to perform some function.
 * CRITICAL = 50: A serious error has occurred. The program itself may shut down or not be able to continue running properly.
+
+## To do
+
+* add sample log output to docs
